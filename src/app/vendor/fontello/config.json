@@ -7,22 +7,52 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "76675011e906d50af404186b489fc76f",
-      "css": "codeopen",
-      "code": 61899,
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "whatsapp",
+      "code": 62002,
       "src": "fontawesome"
     },
     {
-      "uid": "0f6a2573a7b6df911ed199bb63717e27",
-      "css": "github-circled",
-      "code": 61595,
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59392,
       "src": "fontawesome"
     },
     {
-      "uid": "e15f0d620a7897e2035c18c80142f6d9",
-      "css": "link-ext",
-      "code": 61582,
+      "uid": "9affc98d652b86628d650ee58dbf0357",
+      "css": "basket",
+      "code": 59393,
       "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c759418c008e9562944080fee617fc76",
+      "css": "cancel-circled",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "70370693ada58ef0a60fa0984fe8d52a",
+      "css": "plus",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "a66cdc7278e6b33b8bd44a141f5e1a8d",
+      "css": "plus-circled",
+      "code": 59397,
+      "src": "entypo"
+    },
+    {
+      "uid": "3ba4275937db277075fc47d6b5a69a2e",
+      "css": "back",
+      "code": 59398,
+      "src": "entypo"
     }
   ]
 }

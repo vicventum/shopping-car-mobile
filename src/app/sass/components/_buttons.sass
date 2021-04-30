@@ -1,20 +1,20 @@
 .btn
   display: inline-block
-  font-size: $size-boton
-  font-weight: $fw-xbold
-  text-transform: uppercase
+  // font-size: $size-boton
+  font-weight: $fw-bold
+  // text-transform: uppercase
   letter-spacing: .5px
   padding: 1rem 2rem
 
   outline: none
   border: none
+  border-radius: $border-radius
 
   background-color: var(--color-1)
-  color: $dark
-  box-shadow: 5px 5px 0px 0px var(--color-2)
+  color: var(--light-alternative)
 
   cursor: pointer
-    // @extend .u-depth-1
+  @extend .u-depth-1
 
   transition-property: background-color, border-color, color, box-shadow
   transition-duration: .2s
@@ -28,17 +28,17 @@
       // box-shadow: 5px 5px 0px 0px var(--light-alternative)
       box-shadow: 5px 5px 0px 0px var(--color-2)
 
-  &--fuchsia
-    background-color: var(--color-3)
-    &:hover
-      background-color: darken($color-3, 7%)
+  // &--fuchsia
+  //   background-color: var(--color-3)
+  //   &:hover
+  //     background-color: darken($color-3, 7%)
 
-  &--blue
-    background-color: var(--color-2)
-    &:hover
-      background-color: darken($color-2, 7%)
+  // &--blue
+  //   background-color: var(--color-2)
+  //   &:hover
+  //     background-color: darken($color-2, 7%)
 
-  &--green
-    background-color: var(--color-6)
-    &:hover
-      background-color: darken($color-6, 7%)
+  // &--green
+  //   background-color: var(--color-6)
+  //   &:hover
+  //     background-color: darken($color-6, 7%)

@@ -14,8 +14,7 @@
   }
 }
 */
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -50,6 +49,11 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-link-ext:before { content: '\f08e'; } /* '' */
-.icon-github-circled:before { content: '\f09b'; } /* '' */
-.icon-codeopen:before { content: '\f1cb'; } /* '' */
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-basket:before { content: '\e801'; } /* '' */
+.icon-calendar:before { content: '\e802'; } /* '' */
+.icon-cancel-circled:before { content: '\e803'; } /* '' */
+.icon-plus:before { content: '\e804'; } /* '' */
+.icon-plus-circled:before { content: '\e805'; } /* '' */
+.icon-back:before { content: '\e806'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
