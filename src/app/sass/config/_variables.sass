@@ -1,0 +1,90 @@
+// Breakpoints
+$breakpoints: ('phone': 420px,'tablet': 768px,'laptop': 1024px,'desktop': 1280px)
+
+:root
+  --color-1: rgb(48, 172, 232)
+  --color-1-transparent: rgba(48, 171, 232, 0.8)
+  --color-1-dark: rgb(35, 82, 124)
+  --color-2: silver
+  --color-2-transparent: rgba(192, 192, 192, 0.8)
+  --color-2-dark: rgb(114, 114, 114)
+  
+  // --color-success: rgb(32, 138, 41)
+  --color-success: mediumspringgreen
+  --color-danger: tomato
+
+  --light: hsl(236, 36%, 86%)
+  --light-transparent: hsla(236, 36%, 86%, .6)
+  --light-alternative: hsl(236, 36%, 96%)
+  --dark: #222
+  --dark-transparent: rgba(34, 34, 34, 0.8)
+
+  // Fonts
+  --font-title: 'Montserrat', sans-serif
+  --font-paragraph: 'Roboto', sans-serif
+
+  --size-title: 2rem
+  --size-paragraph: 1.6rem
+  --size-min: 1.4rem
+  
+  --h1: 4rem
+  --h2: 3rem
+  --h3: 2rem
+
+  --lh-title: 1.4
+  --lh-body: 1.6
+
+  --fw-regular: 400
+  --fw-bold: 700
+
+  // General sizes
+  --max-width: 120rem
+  --border-radius: 20px
+
+
+
+  +media('>=tablet')
+
+  +media('>=laptop')
+
+
+$color-1: rgb(48, 172, 232)
+$color-1-transparent: rgba(48, 171, 232, 0.8)
+$color-1-dark: rgb(35, 82, 124)
+$color-2: silver
+$color-2-transparent: rgba(192, 192, 192, 0.8)
+$color-2-dark: rgb(114, 114, 114)
+$color-success: mediumspringgreen
+$color-danger: tomato
+$light: hsl(236, 36%, 86%)
+$light-transparent: hsla(236, 36%, 86%, .6)
+$light-alternative: hsl(236, 36%, 96%)
+$dark: #222
+$dark-transparent: rgba(34, 34, 34, 0.8)
+
+// Sass
+$font-title: var(--font-title)
+$font-paragraph: var(--font-paragraph)
+
+$size-paragraph: var(--size-paragraph)
+$size-title: var(--size-title)
+$size-min: var(--size-min)
+
+$h1: var(--h1)
+$h2: var(--h2)
+$h3: var(--h3)
+
+$lh-title: var(--lh-title)
+$lh-body: var(--lh-body)
+
+$fw-regular: var(--fw-regular)
+$fw-bold: var(--fw-bold)
+
+$max-width: var(--max-width)
+$border-radius: var(--border-radius)
+
+$z-last: -9999
+$z-1: 1
+$z-2: 10
+$z-3: 100
+$z-4: 1000

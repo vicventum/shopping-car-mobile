@@ -1,0 +1,48 @@
+.initial-animation
+    opacity: 0
+    visibility: hidden
+.initial-animation-scale
+    transform: scale(.95)
+    opacity: 0
+    visibility: hidden
+
+.transition
+    transition-property: transform opacity visibility
+    transition-duration: .8s
+    transition-timing-function: ease-in-out
+
+.delay-0_5s
+    transition-delay: .5s
+.delay-1s
+    transition-delay: 1s
+.delay-1_5s
+    transition-delay: 1.5s
+.delay-2s
+    transition-delay: 2s
+.delay-4s
+    transition-delay: 4s
+
+.show-animation
+    transform: scale(1)
+    opacity: 1
+    visibility: visible
+
+// .hero
+
+//     &__title
+//         @extend .initial-animation-scale
+//         @extend .transition
+//         // @extend .delay-0_5s
+
+//     &__subtitle, &__btns
+//         @extend .initial-animation
+//         @extend .transition
+
+//     &__subtitle
+//         @extend .delay-1s
+//     &__btns
+//         @extend .delay-1s
+
+// .about, .knowledge, .portfolio, .contact
+//     @extend .initial-animation
+//     @extend .transition
