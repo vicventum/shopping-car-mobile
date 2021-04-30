@@ -1,5 +1,5 @@
 // Import CSS
-import "./app/scss/main.scss"
+import "./app/sass/main.sass"
 
 // components
 import "./app/js/app"
