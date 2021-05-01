@@ -1,5 +1,58 @@
 .card
-    border-radius: $border-radius
+    position: relative
+
+    transition: height .3s ease-in-out
+    perspective: 100rem
+
+    // &--flip
+    &:hover
+        .card__inner 
+            transform: rotateY(180deg)
+        
+        .card, .card__back 
+            // height: 288px
+            // overflow: initial
+            opacity: 1
+
+    &__inner
+        position: relative
+        transition: transform .5s ease-in-out
+
+        transform-origin: 50% 50%
+        transform-style: preserve-3d
+
+    &__front,
+    &__back,
+    &__inner
+        border-radius: $border-radius
+        background-color: var(--light)
+
+    &__front
+        position: relative
+        z-index: $z-1
+
+    &__back
+        transform: rotateY(180deg)
+
+        // height: inherit
+        // overflow: hidden
+        opacity: 0
+
+        transition: height overflow opacity
+        transition-duration:  .3s
+        transition-timing-function: ease-in-out
+
+    &__back 
+        position: absolute
+        z-index: $z-1
+        top: 0
+        left: 0
+        
+        display: flex
+        
+        width: 100%
+        min-height: 100%
+    
 
     &__img
         object-fit: cover
@@ -10,6 +63,13 @@
     &__items 
         padding: 1.5rem
 
+    &__close
+        position: absolute
+        top: 1rem
+        right: 1rem
+        z-index: $z-2
+        color: var(--color-danger)
+        font-size: $size-up
     &__title
         font-size: $size-paragraph
         color: var(--color-1-dark)
