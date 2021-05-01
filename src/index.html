@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="root">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,43 +20,38 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body>
-    
     <section class="container">
 
-      <!-- HEADER -->
-      <header class="header">
-
-        <!-- Logo -->
-        <a class="header__logo" href="index.html">
-          <img src="./assets/img/logo.svg" alt="logo denomades">
-        </a>
-
-        <div class="header__items">
-          <a href="#" class="btn">Chat</a>
-
-          <i href="#" class="icon-whatsapp u-icon"></i>
-          <i href="#" class="icon-phone u-icon"></i>
-          <i href="#" class="icon-basket u-icon"></i>
-
-
-          <!-- Hamburger Icon -->
-          <button id="iconHamburger" class="header__hamburger hamburger hamburger--collapse u-hide-for-desktop"
-              type="button">
+      <div class="header-container u-depth-1">
+        <!-- HEADER -->
+        <header class="header u-box u-box--y-1 
+        v-flex j-content-between">
+          <!-- Logo -->
+          <a class="header__logo" href="index.html">
+            <img src="./assets/img/logo.svg" alt="logo denomades" />
+          </a>
+          <div class="header__items
+          v-flex j-content-between a-items-center
+          ">
+            <a href="#" class="btn btn--chat">Chat</a>
+            <i href="#" class="icon-whatsapp u-icon"></i>
+            <i href="#" class="icon-phone u-icon"></i>
+            <i href="#" class="icon-basket u-icon"></i>
+            <!-- Hamburger Icon -->
+            <button
+              id="iconHamburger" class="header__hamburger hamburger hamburger--collapse -hamburger--squeeze u-hide-for-desktop" type="button">
               <span class="hamburger-box">
-                  <span class="header__hamburger-bars hamburger-inner"></span>
+                <span class="header__hamburger-bars hamburger-inner"></span>
               </span>
-          </button>
-        </div>
-
-
-      </header>
-      
+            </button>
+          </div>
+        </header>
+      </div>
 
     </section>
-    
+
     <!-- SCRIPTS -->
     <script src="./index.js"></script>
   </body>
