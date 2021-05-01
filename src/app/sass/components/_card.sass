@@ -4,19 +4,25 @@
     transition: height .3s ease-in-out
     perspective: 100rem
 
-    // &--flip
-    &:hover
+    // &:hover
+    &--flip
         .card__inner 
             transform: rotateY(180deg)
         
         .card, .card__back 
-            // height: 288px
+            // height: auto
+        .card__back 
+            height: auto
             // overflow: initial
+            z-index: $z-1
             opacity: 1
+
+        .card__btn--plus
+            // visibility: hidden
 
     &__inner
         position: relative
-        transition: transform .5s ease-in-out
+        transition: transform .3s ease-in-out
 
         transform-origin: 50% 50%
         transform-style: preserve-3d
@@ -38,13 +44,13 @@
         // overflow: hidden
         opacity: 0
 
-        transition: height overflow opacity
+        transition: height overflow opacity z-index
         transition-duration:  .3s
         transition-timing-function: ease-in-out
 
     &__back 
         position: absolute
-        z-index: $z-1
+        // z-index: $z-1
         top: 0
         left: 0
         padding: 1.5rem
@@ -71,11 +77,14 @@
         z-index: $z-2
         color: var(--color-danger)
         font-size: $size-up
+
     &__title
         font-size: $size-paragraph
         color: var(--color-1-dark)
+
     &__location, &__amount, button
         font-size: $size-down
+
     &__amount
         margin: 1rem 0
         text-align: right
@@ -85,6 +94,11 @@
             font-size: $size-up
             font-weight: $fw-bold
             // color: var(--color-success-dark)
+
+    &__btn--plus
+        position: relative
+        z-index: $z-3
+        transition: visibility .1s ease-in-out
 
     &__back
         font-size: $size-down

@@ -5,4 +5,4 @@ import "./app/sass/main.sass"
 import "./app/js/config/hamburger-config"
 
 // components
-import "./app/js/app"
+import "./app/js/card"
