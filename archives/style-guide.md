@@ -63,7 +63,11 @@ Dimensions of those elements that you consider need to have specific dimensions,
 > Those elements whose sizes occupy all the available space in width or height, can be specified as a size of 100% (100% of the available size)
 
 - **Mobile**
-  ...
+  - Size title: 2rem
+  - Size paragraph: 1.6rem
+  - Size up: 1.8rem
+  - Size down: 1.4rem
+  - Size min: 1.1rem
 
 - **Desktop**
   ...
