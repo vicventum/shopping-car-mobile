@@ -17,6 +17,7 @@ function activeFlip({target}) {
   const card = $id(`card${item.dataset.position}`)
   const cardBack = $id(`cardBack${item.dataset.position}`)
   const maxHeight = cardBack.scrollHeight
+  
   card.style.height = `${maxHeight}px`
   card.classList.toggle('card--flip')
   
@@ -25,12 +26,16 @@ function activeFlip({target}) {
 function desactiveFlip({target}) {
   let item = null
   if (target.classList.contains('card__btn--back'))
-    item = target
+  item = target
   else if (target.parentElement.classList.contains('card__btn--back'))
-    item = target.parentElement
-
+  item = target.parentElement
+  
   const card = $id(`card${item.dataset.position}`)
-  card.style.height = `auto`
+  const cardFront = $id(`cardFront${item.dataset.position}`)
+  const maxHeight = cardFront.scrollHeight
+  console.log(maxHeight);
+
+  card.style.height = `${maxHeight}px`
   card.classList.toggle('card--flip')
 
 }
