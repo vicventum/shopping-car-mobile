@@ -6,7 +6,7 @@ export const $id = document.getElementById.bind(document),
   rootStylesGet = window.getComputedStyle(document.documentElement),
   root = $id('root'),
 
-  cards = [...$all('.card')],
-  cardsBack = [...$all('.card__back')],
   btnsBack = [...$all('.card__btn--back')],
-  btnsPlus = [...$all('.card__btn--plus')]
+  btnsPlus = [...$all('.card__btn--plus')],
+  btnsClose = [...$all('.card__close')]
+  
