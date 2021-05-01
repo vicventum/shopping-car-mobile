@@ -9,9 +9,8 @@ $breakpoints: ('phone': 420px,'tablet': 768px,'laptop': 1024px,'desktop': 1280px
   --color-2-transparent: rgba(192, 192, 192, 0.8)
   --color-2-dark: rgb(114, 114, 114)
   
-  // --color-success: rgb(32, 138, 41)
+  --color-success: rgb(32, 138, 41)
   // --color-success: mediumspringgreen
-  --color-success: lime
   --color-danger: tomato
 
   --light: hsl(236, 36%, 86%)
@@ -26,7 +25,9 @@ $breakpoints: ('phone': 420px,'tablet': 768px,'laptop': 1024px,'desktop': 1280px
 
   --size-title: 2rem
   --size-paragraph: 1.6rem
-  --size-min: 1.4rem
+  --size-up: calc( var(--size-paragraph) + .1rem )
+  --size-down: calc( var(--size-paragraph) - .2rem )
+  --size-min: calc( var(--size-paragraph) - .6rem )
   
   --h1: 4rem
   --h2: 3rem
@@ -69,6 +70,8 @@ $font-paragraph: var(--font-paragraph)
 
 $size-paragraph: var(--size-paragraph)
 $size-title: var(--size-title)
+$size-up: var(--size-up)
+$size-down: var(--size-down)
 $size-min: var(--size-min)
 
 $h1: var(--h1)

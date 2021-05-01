@@ -1,45 +1,35 @@
 .btn
-  display: inline-block
-  // font-size: $size-boton
-  font-weight: $fw-bold
-  font-family: var(--font-paragraph)
-  // text-transform: uppercase
-  letter-spacing: .5px
-  padding: 1rem 2rem
+    display: inline-block
+    font-size: $size-paragraph
+    font-weight: $fw-bold
+    font-family: var(--font-paragraph)
+    // text-transform: uppercase
+    letter-spacing: .5px
+    padding: 1rem 2rem
 
-  outline: none
-  border: none
-  border-radius: $border-radius
+    outline: none
+    border: 1px solid var(--color-1-dark)
+    border-radius: $border-radius
 
-  background-color: var(--color-1)
-  color: var(--light-alternative)
+    background-color: transparent 
+    color: var(--color-1-dark)
 
-  cursor: pointer
-  @extend .u-depth-1
+    cursor: pointer
+    @extend .u-depth-1
 
-  transition-property: background-color, border-color, color, box-shadow
-  transition-duration: .2s
-  transition-timing-function: ease-in-out
+    transition-property: background-color, border-color, color, box-shadow
+    transition-duration: .2s
+    transition-timing-function: ease-in-out
 
-  +media('>=tablet')
-    box-shadow: 5px 5px 0px 0px transparent
 
-    &:hover
-      background-color: darken($color-1, 15%)
-      // box-shadow: 5px 5px 0px 0px var(--light-alternative)
-      box-shadow: 5px 5px 0px 0px var(--color-2)
+    &--chat
+        background-color: var(--color-1)
+        color: var(--light-alternative)
+        padding: .8rem 2rem
+        border: none
 
-  &--chat
-    padding: .8rem 2rem
-  //   &:hover
-  //     background-color: darken($color-3, 7%)
-
-  // &--blue
-  //   background-color: var(--color-2)
-  //   &:hover
-  //     background-color: darken($color-2, 7%)
-
-  // &--green
-  //   background-color: var(--color-6)
-  //   &:hover
-  //     background-color: darken($color-6, 7%)
+    &--action
+        // @extend .u-depth-2
+        color: var(--light-alternative)
+        border: 1px solid var(--color-success)
+        background-color: var(--color-success)

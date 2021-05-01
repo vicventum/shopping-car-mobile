@@ -22,10 +22,11 @@
     />
   </head>
   <body>
-    <section class="container">
+    <section class="container
+    v-flex flex-col j-content-between">
 
+      <!-- HEADER -->
       <div class="header-container u-depth-1">
-        <!-- HEADER -->
         <header class="header u-box u-box--y-1 
         v-flex j-content-between">
           <!-- Logo -->
@@ -36,9 +37,9 @@
           v-flex j-content-between a-items-center
           ">
             <a href="#" class="btn btn--chat">Chat</a>
-            <i href="#" class="icon-whatsapp u-icon"></i>
-            <i href="#" class="icon-phone u-icon"></i>
-            <i href="#" class="icon-basket u-icon"></i>
+            <a href="#"><i href="#" class="icon-whatsapp u-icon"></i></a>
+            <a href="#"><i href="#" class="icon-phone u-icon"></i></a>
+            <a href="#"><i href="#" class="icon-basket u-icon"></i></a>
             <!-- Hamburger Icon -->
             <button
               id="iconHamburger" class="header__hamburger hamburger hamburger--collapse -hamburger--squeeze u-hide-for-desktop" type="button">
@@ -50,27 +51,34 @@
         </header>
 
 
-        <!-- FOOTER -->
-        <footer class="pay">
+        
+      </div>
+
+      <main></main>
+      
+      <!-- FOOTER -->
+      <div class="pay-container u-depth-1">
+        <footer class="pay u-box u-box--y-1
+        row-space-1">
           <div class="pay__amounts">
-            <div class="pay__total">
+            <div class="pay__total
+            v-flex j-content-between">
               <p>Precio total</p>
               <p><span>USD:</span>$999.99</p>
             </div>
-            <div class="pay__advance">
+            <div class="pay__advance
+            v-flex j-content-between">
               <p>Adelanto para reservar</p>
               <p><span>USD:</span>$999.99</p>
             </div>
           </div>
-
-          <div class="pay__btns">
-            <button class="btn">Más activades</button>
-            <button class="btn">Reservar</button>
+          <div class="pay__btns
+          v-flex col-space-1">
+            <button class="btn w-full">Más activades</button>
+            <button class="btn btn--action w-full">Reservar</button>
           </div>
         </footer>
-
       </div>
-
     </section>
 
     <!-- SCRIPTS -->
