@@ -1,7 +1,7 @@
 .card
-    position: relative
+    // position: relative
 
-    transition: height .3s ease-in-out
+    transition: height .5s ease-in-out
     perspective: 100rem
 
     // &:hover
@@ -12,17 +12,17 @@
         .card, .card__back 
             // height: auto
         .card__back 
-            height: auto
+            // height: auto
             // overflow: initial
-            z-index: $z-1
+            // z-index: $z-1
             opacity: 1
 
-        .card__btn--plus
-            // visibility: hidden
+        .card__front
+            visibility: hidden
 
     &__inner
         position: relative
-        transition: transform .3s ease-in-out
+        transition: transform .5s ease-in-out
 
         transform-origin: 50% 50%
         transform-style: preserve-3d
@@ -34,8 +34,9 @@
         background-color: var(--light)
 
     &__front
-        position: relative
-        z-index: $z-1
+        // position: relative
+        // z-index: $z-1
+        transition: visibility .2s cubic-bezier(.77,0,.18,1)
 
     &__back
         transform: rotateY(180deg)
@@ -45,7 +46,7 @@
         opacity: 0
 
         transition: height overflow opacity z-index
-        transition-duration:  .3s
+        transition-duration:  .5s
         transition-timing-function: ease-in-out
 
     &__back 
@@ -98,8 +99,8 @@
 
     &__btn--plus
         position: relative
-        z-index: $z-3
-        transition: visibility .1s ease-in-out
+        z-index: $z-1
+        // transition: visibility .1s ease-in-out
 
     &__back
         font-size: $size-down
