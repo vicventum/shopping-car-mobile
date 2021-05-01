@@ -7,10 +7,7 @@
     --x-2: calc(var(--y-2) - .5rem)
     --x-3: calc(var(--y-3) - .5rem)
 
-    +media('>=tablet') 
-        --y-1: 7rem
-        --y-2: 10rem
-        --y-3: 10rem
+   
     
 .u
 
@@ -22,14 +19,14 @@
         margin: 0 auto
         max-width: $max-width
 
-        @include media('>=tablet')
+        +media('>=tablet')
             --width: 85%
             
 
-        @include media('>=laptop')
+        +media('>=laptop')
             --width: 80%
 
-        @include media('>=desktop')
+        +media('>=desktop')
             // max-width: $max-width
 
         &--y-1
